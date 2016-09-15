@@ -16,7 +16,7 @@ sealed case class Game (
 
   val random = Random
 
-  def createExpression() = createExpression(random.nextInt(8) + 2)
+  def createExpression: Expression = createExpression(random.nextInt(8) + 2)
   def createExpression(remainingLevels: Int): Expression =
     if (remainingLevels <= 0)
       Number(random.nextInt(maxValue) + 1)

@@ -10,7 +10,7 @@ object Main extends App{
 
   val creator = new Game(10, 0)
 
-  val expression = creator.createExpression()
+  val expression = creator.createExpression
   val unbalancedSumNumbers = expression.numbers
   val unbalancedSumResult = expression.eval()
 
